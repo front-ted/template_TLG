@@ -594,7 +594,10 @@ ul {
 }
 
 .voltar-topo{
-  margin-top: 20px;
+  background: url('../../assets/bt_topo.svg') no-repeat;
+  width: 74px;
+  height: 73px;
+  display: block;
 }
 
 .mover-fazer{
@@ -668,51 +671,63 @@ ul {
 .circulo-1 {
   position: absolute;
   left: -250px;
-  z-index: 3;
+  z-index: 2;
 }
 .circulo-1 svg {
   height: 500px;
   width: 500px;
 }
 .circulo-2 {
-  background-color: #fed06e;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
+  background: url('../../assets/triangulo.svg') no-repeat;
+  height: 200px;
+  width: 200px;
   position: absolute;
-  top: 260px;
-  left: -125px;
+  top: 250px;
+  left: -60px;
 }
 .circulo-3 {
   position: absolute;
-  bottom: -250px;
-  right: -140px;
+  height: 250px;
+  width: 250px;
+  bottom: -130px;
+  right: -105px;
 }
 .circulo-4 {
-  background-color: #fed06e;
+  background: url('../../assets/triangulo.svg') no-repeat;
   height: 150px;
   width: 150px;
-  border-radius: 50%;
   position: absolute;
   bottom: 50px;
   right: 30px;
 }
 @media screen and (max-width: 1810px) {
-  .circulo-1, .circulo-2, .circulo-3, .circulo-4 {
+  .circulo-1{
+    transform: scale(0.7) rotate(45deg);
+  }
+  .circulo-3{
+    transform: scale(0.7) rotate(85deg);
+  }
+  .circulo-2, .circulo-4 {
     transform: scale(0.7);
     z-index: 9;
   }
 }
 @media screen and (max-width: 1680px) {
-  .circulo-1, .circulo-2, .circulo-3, .circulo-4 {
+  .circulo-1{
+    transform: scale(0.5) rotate(45deg);
+  }
+  .circulo-3{
+    transform: scale(0.5) rotate(85deg);
+  }
+  .circulo-2, .circulo-4 {
     transform: scale(0.5);
     z-index: 9;
   }
   .circulo-1 {
-    left: -300px;
+    left: -180px;
   }
   .circulo-2 {
-    top: 150px;
+    top: 250px;
     z-index: 2;
   }
   .circulo-4 {

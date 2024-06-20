@@ -133,7 +133,7 @@ p {
 
 /*footer*/
 .voltar-topo {
-    background: url('../../assets/bt_topo.svg');
+    background: url('../images/bt_topo.svg');
     width: 42px;
     height: 42px;
     display: block;
